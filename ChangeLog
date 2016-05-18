@@ -1,0 +1,29 @@
+version 0.1.0: first release
+version 0.1.1: fix a bug in NGS.CNV function
+version 0.2.0: substantially revise functions in msscan_tools.R to fix several bugs in 
+               identifying the exact locations of change points
+version 0.3.0: add functions for processing SNP array data and SCNA calling pipeline
+version 0.3.1: 1) improve baseline computing function
+               2) change the name of cnv.call.seq to cnv.call
+               3) modify diagnosis.cluster.plot
+               4) fix a bug in merge.segments to make sure maxL is properly calculated
+version 0.3.2: 1) change compute.baseline to make log2ratio dimension more robust
+               2) automatically decide maxL and ref.num.probe as the 1/100 the data points
+                  if the user does not choose one
+               3) add seed option to the functions using resampling strategy for 
+                  reproducibility
+               4) correct some bugs in document examples
+               5) change the function name merge.segments.chr and merge.segments to 
+                  merging.segments.chr and merging.segments to avoid confusion with the
+                  function merge with regard to S3 method nomenclature
+               6) revise the vignettes
+version 0.3.3:
+               1) add function for GC content adjustment
+               2) add function for manual baseline adjustment
+               3) update NGS.CNV and SNP.CNV to include GC adjustment functionality
+               4) update the vignettes
+version 0.3.4:
+               1) update reference
+               2) move some big data files to saasCNV website to reduce the size of 
+                  the package
+               3) update documents

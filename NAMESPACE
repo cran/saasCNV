@@ -1,0 +1,28 @@
+import(RANN, DNAcopy)
+
+export(check.overlap, cnv.call, cnv.data.chr, cnv.data, joint.segmentation,
+    delta.sd, diagnosis.cluster.plot, compute.baseline, 
+    diagnosis.seg.plot.chr, 
+    diagnosis.QQ.plot, genome.wide.plot, impute.missing.data, 
+    merging.segments.chr, merging.segments,
+    Mode, NGS.CNV, reannotate.CNV.res, seg.summary, vcf2txt,
+    BAF2mBAF, snp.cnv.data, snp.refine.boundary, SNP.CNV, GC.adjust, 
+    compute.baseline.manual)
+
+export(compute.var, computeBeta, computeMoments, 
+    computeTiltDirect, ComputeZ.fromS.R, ComputeZ.fromS.R.partial, computeZ.onechange, 
+    computeZ.onechange.sample, computeZ.squarewave.sample, dchi, fcompute.max.Z, 
+    fmscbs, fscan.max, getCutoffMultisampleWeightedChisq, matrix.max, mscbs.classify, 
+    pmarg.sumweightedchisq, pvalueMultisampleWeightedChisq, vu)
+
+importFrom("grDevices", "dev.off", "pdf", "png")
+importFrom("graphics", "abline", "axis", "barplot", "grid", "hist",
+           "layout", "legend", "par", "plot", "points", "segments")
+importFrom("stats", "integrate", "loess", "mad", "median", "pchisq",
+           "pnorm", "predict", "qqline", "qqnorm", "rnorm", "sd",
+           "var")
+importFrom("utils", "head", "read.delim", "read.table", "write.table")
+
+
+##exportPattern("^[[:alpha:]]+")
+##useDynLib(CNAnorm)
